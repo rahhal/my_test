@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Neighborhood{% endblock %}
+
+{% block body %}
+    <h1>Edit Neighborhood</h1>
+
+    {{ include('neighborhood/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('neighborhood_index') }}">back to list</a>
+
+    {{ include('neighborhood/_delete_form.html.twig') }}
+{% endblock %}
